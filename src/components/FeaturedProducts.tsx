@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
       name: 'Performance Brake Pads',
       price: '$89.99',
       rating: 4.8,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
       category: 'Brakes',
       description: 'High-performance ceramic brake pads for superior stopping power'
     },
@@ -23,7 +23,7 @@ const FeaturedProducts = () => {
       name: 'Premium Oil Filter',
       price: '$24.99',
       rating: 4.9,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop',
       category: 'Engine',
       description: 'Advanced filtration technology for optimal engine protection'
     },
@@ -32,7 +32,7 @@ const FeaturedProducts = () => {
       name: 'LED Headlight Kit',
       price: '$159.99',
       rating: 4.7,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop',
       category: 'Lighting',
       description: 'Ultra-bright LED headlights with easy installation'
     },
@@ -41,7 +41,7 @@ const FeaturedProducts = () => {
       name: 'Performance Air Filter',
       price: '$45.99',
       rating: 4.6,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop',
       category: 'Engine',
       description: 'High-flow air filter for improved engine performance'
     },
@@ -50,7 +50,7 @@ const FeaturedProducts = () => {
       name: 'Shock Absorbers Set',
       price: '$299.99',
       rating: 4.8,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
       category: 'Suspension',
       description: 'Premium shock absorbers for smooth ride quality'
     },
@@ -59,7 +59,7 @@ const FeaturedProducts = () => {
       name: 'Spark Plug Set',
       price: '$79.99',
       rating: 4.9,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop',
       category: 'Engine',
       description: 'High-performance spark plugs for optimal ignition'
     }

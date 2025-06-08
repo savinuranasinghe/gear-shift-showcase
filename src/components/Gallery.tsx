@@ -15,56 +15,56 @@ const Gallery = () => {
   const galleryItems = [
     {
       id: 1,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
       title: 'Performance Engine Components',
       category: 'Engine',
       description: 'High-performance engine parts for maximum power'
     },
     {
       id: 2,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
       title: 'Premium Brake Systems',
       category: 'Brakes',
       description: 'Advanced braking solutions for safety and performance'
     },
     {
       id: 3,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop',
       title: 'Suspension Upgrades',
       category: 'Suspension',
       description: 'Complete suspension systems for improved handling'
     },
     {
       id: 4,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop',
       title: 'LED Lighting Solutions',
       category: 'Lighting',
       description: 'Modern LED lighting for enhanced visibility'
     },
     {
       id: 5,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=400&fit=crop',
       title: 'Interior Accessories',
       category: 'Interior',
       description: 'Premium interior components and accessories'
     },
     {
       id: 6,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
       title: 'Turbo Systems',
       category: 'Engine',
       description: 'Complete turbo charging solutions'
     },
     {
       id: 7,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop',
       title: 'Racing Brakes',
       category: 'Brakes',
       description: 'Professional racing brake components'
     },
     {
       id: 8,
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop',
       title: 'Coilover Kits',
       category: 'Suspension',
       description: 'Adjustable coilover suspension systems'
