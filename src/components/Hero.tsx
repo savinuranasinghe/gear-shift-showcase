@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
-import { Howl } from 'howler';
 import { Button } from '@/components/ui/button';
 import { Play, Volume2 } from 'lucide-react';
 
@@ -9,21 +8,6 @@ const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
   const carRef = useRef<HTMLDivElement>(null);
   const [audioPlayed, setAudioPlayed] = useState(false);
-  const [engineSound, setEngineSound] = useState<Howl | null>(null);
-
-  useEffect(() => {
-    // Initialize engine sound
-    const sound = new Howl({
-      src: ['data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+XwtGIcBjiS1/LNeSsFJHfH8N2QQAoUXrTp66hVFApGn+XxtGIcBjiS2PLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+XxtGIcBjiS2PLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+XxtGIcBjiS2PLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+XxtGIcBjiS2PLNeSsFJHfH8N2QQAoUXrTp66hVFApGn+Xxt'],
-      volume: 0.3,
-      loop: false,
-    });
-    setEngineSound(sound);
-
-    return () => {
-      sound.unload();
-    };
-  }, []);
 
   useEffect(() => {
     if (heroRef.current) {
@@ -67,11 +51,11 @@ const Hero = () => {
   }, []);
 
   const handleEngineStart = () => {
-    if (engineSound && !audioPlayed) {
-      engineSound.play();
+    if (!audioPlayed) {
       setAudioPlayed(true);
+      console.log('🚗 Engine started! Vroom vroom!');
 
-      // Add shake animation to car on sound
+      // Add shake animation to car on "sound"
       if (carRef.current) {
         gsap.to(carRef.current, {
           rotation: 2,
@@ -127,7 +111,7 @@ const Hero = () => {
                 onClick={handleEngineStart}
               >
                 {audioPlayed ? <Volume2 className="mr-2 h-5 w-5" /> : <Play className="mr-2 h-5 w-5" />}
-                {audioPlayed ? 'Engine Sound' : 'Start Engine'}
+                {audioPlayed ? 'Engine Started!' : 'Start Engine'}
               </Button>
             </div>
           </div>
